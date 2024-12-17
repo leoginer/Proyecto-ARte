@@ -6,6 +6,7 @@
         AFRAME.registerComponent("videohandler", {
             init: function () {
                 var marker = this.el;
+
                 this.vid = document.querySelector("#vid");
 
                 marker.addEventListener("markerFound", function () {
@@ -48,13 +49,13 @@
     </div>
     <a-scene
         vr-mode-ui="enabled: false;"
-        renderer="antialias: true; alpha: true; precision: medium;"
+        renderer="antialias: true; alpha: true; precision: mediump;"
         embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
 
         <a-assets>
             <video src="https://leoginer.github.io/Proyecto-ARte/videos/video0.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" 
-                crossorigin webkit-playsinline playsinline>
+                crossorigin webkit-playsinline autoplay playsinline>
             </video>
         </a-assets>
 
@@ -62,7 +63,7 @@
             videohandler
             type="nft"
             url="https://leoginer.github.io/Proyecto-ARte/markers/marcador0/marcador0"
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+            smooth="true" smoothcount="10" smoothtolerance="0.01" smooththreshold="5"
         >
             <a-video
                 src="#vid"
