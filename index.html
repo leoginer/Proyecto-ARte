@@ -61,28 +61,23 @@
 
         <a-nft
             rotation="-90 0 0"
-            scale="2 2 2"
             videohandler
             type="nft" url="https://leoginer.github.io/Proyecto-ARte/markers/marcador0/marcador0"
             smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
         >
         
-            <a-entity
-            rotation="-90 0 0"
-            position="0 0 0"
+            <a-video
+                src="#vid"
+                rotation="-90 0 0"
+                position="0 172 0"
+                material="side: double"
+                width="200"
+                height="355"
             >
-                <a-video
-                    src="#vid"
-                    position="0 0 0"
-                    material="side: double"
-                    width="200"
-                    height="355"
-                >
-                </a-video> 
+            </a-video> 
 
-            </a-entity>
         </a-nft>
-        
+
 		<a-entity camera></a-entity>
 	</a-scene>
 </body>
