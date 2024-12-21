@@ -55,12 +55,12 @@
         <a-assets>
             <video src="https://leoginer.github.io/Proyecto-ARte/videos/video0.mp4"
               preload="auto" id="vid" response-type="arraybuffer" loop
-              crossorigin webkit-playsinline autoplay muted playsinline>
+              crossorigin webkit-playsinline autoplay playsinline>
             </video>
         </a-assets>
 
         <a-nft
-            rotation="-90 0 -0"
+            rotation="-90 0 0"
             videohandler
             type="nft" url="https://leoginer.github.io/Proyecto-ARte/markers/marcador0/marcador0"
             smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
@@ -68,9 +68,9 @@
         
             <a-video
                 src="#vid"
-                rotation="-90 0 -0"
-                position="60 -0.1 -100"
-                material="side: double"
+                rotation="-90 0 0"
+                position="60 -1 -1"
+                material="side: double; shader: standard; transparent: true; alphaTest: 0.5;"
                 width="300"
                 height="533"
             >
